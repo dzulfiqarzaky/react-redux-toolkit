@@ -1,0 +1,266 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 5rem;
+  background-color: #282c34;
+  min-height: 10vh;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.headerUl {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+ a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink
+}
+
+/* header */
+
+.postList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-post {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #282c34;
+  min-height: 40vh;
+  width: 48vw;
+  min-width: 520px;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.card-post h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.card-post p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card-readmore {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-weight: 100;
+
+}
+
+.card-readmore p {
+  font-size: 1rem;
+  color: #61dafb;
+}
+
+.card-readmore p:hover {
+  color: pink;
+}
+
+.emoji-btn {
+  padding: .5rem;
+  background-color: #282c34;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-left: .5rem;
+}
+
+
+/* card posts */
+
+.singlePost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #282c34;
+  height: 100vh;
+  max-height: 100vh;
+  color: white;
+}
+
+.singlePost h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.singlePost p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.action-btn button {
+  margin-top: 1rem;
+  padding: 1em;
+  width: 5rem;
+  border-radius: .5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.edit {
+  background-color: #39b3d4;
+}
+.edit:hover {
+  background-color: skyblue;
+}
+
+.delete {
+  background-color: #ff4b4b;
+}
+
+.delete:hover {
+  background-color: pink;
+}
+
+/* detail profile */
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  background-color: #282c34;
+  height: 100vh;
+  max-height: 100vh;
+  color: white;
+}
+.add-form label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.add-form input {
+  margin: 1rem;
+  padding: 1rem;
+  width: 50%;
+}
+
+.add-form select {
+  margin: 1rem;
+  padding: 1rem;
+
+  width: 50%;
+}
+
+.add-form textarea {
+  margin: 1rem;
+  width: 50%;
+  height: 10rem;
+}
+
+.add-form button {
+  margin-top: 1rem;
+  padding: 1em;
+  width: 5rem;
+  border-radius: .3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background-color: rgb(14, 198, 195);
+  color: white;
+}
